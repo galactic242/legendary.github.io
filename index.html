@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geetank</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    
+  <link rel="icon" href="model.png" type="image/x-icon">
+
+  <meta property="og:title" content="Portfolio About Geetank.">
+  <meta property="og:description" content="Made by Geetank">
+  <meta property="og:image" content="https://raw.githubusercontent.com/galactic242/legendary.github.io/main/model.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://galactic242.github.io/legendary.github.io">
+</head>
+<body>
+    <div class="theme-modal" id="themeModal">
+        <div class="theme-modal-content">
+            <h2>Choose Your Theme</h2>
+            <div class="theme-buttons">
+                <button class="theme-btn light-btn" data-theme="light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <span>Light Mode</span>
+                </button>
+                <button class="theme-btn dark-btn" data-theme="dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+    
+    <section class="hero">
+        <div class="slider" style="--quantity: 7">
+            <div class="item" style="--position:1"><img src="1.png" alt="Slide 1"></div>
+            <div class="item" style="--position:2"><img src="2.png" alt="Slide 2"></div>
+            <div class="item" style="--position:3"><img src="3.png" alt="Slide 3"></div>
+            <div class="item" style="--position:4"><img src="4.png" alt="Slide 4"></div>
+            <div class="item" style="--position:5"><img src="5.png" alt="Slide 5"></div>
+            <div class="item" style="--position:6"><img src="6.png" alt="Slide 6"></div>
+            <div class="item" style="--position:7"><img src="7.png" alt="Slide 7"></div>
+        </div>
+        <div class="hero-content">
+            <div class="model"></div>
+            <p class="hero-subtitle">Welcome to my personal site</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card fade-in">
+                    <p>Hello everyone, it's me, Geetank. I'm just a normal person and this site is all about me. I do Lua (~25%) and struggle with HTML — not really a traditional coder, just a skid having fun.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <p>I play Roblox occasionally (once every two weeks), and I also game Minecraft. My handles are BeastKiller6946 (Minecraft) and BeastKiller#6946 (Xbox). I'm into UFC, tech, Lua obfuscators, exploring scripts, and a bit of cybersecurity.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <p>I'm not a pro developer, just someone who likes tweaking, watching fights, and messing with code and community. I vibe online and enjoy low-key gaming while exploring what Lua can do.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <p>Languages I do with AI: Lua, Luau, Python, JavaScript, CSS, HTML.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <p>That's pretty much the gist — thanks a ton for stopping by!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <a href="https://github.com/kyraisadev/discord-bot-chstomize-it" target="_blank" class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%235865F2;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%233b48cc;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g1)' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='32' font-weight='bold' fill='white'%3EDiscord Bot%3C/text%3E%3C/svg%3E" alt="Discord Bot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Discord Bot</h3>
+                        <p>A customizable Discord bot with various features and commands</p>
+                    </div>
+                </a>
+                <a href="https://github.com/kyraisadev/legendary.github.io" target="_blank" class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%236366f1;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%238b5cf6;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g2)' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='32' font-weight='bold' fill='white'%3EMy Portfolio%3C/text%3E%3C/svg%3E" alt="My Portfolio">
+                    </div>
+                    <div class="project-content">
+                        <h3>My Portfolio</h3>
+                        <p>Current portfolio website showcasing my work and skills</p>
+                    </div>
+                </a>
+                <a href="https://github.com/kyraisadev/website.github.io" target="_blank" class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Cdefs%3E%3ClinearGradient id='g3' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%238b5cf6;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%23ec4899;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g3)' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' font-weight='bold' fill='white'%3EOld Portfolio%3C/text%3E%3C/svg%3E" alt="My Old Portfolio">
+                    </div>
+                    <div class="project-content">
+                        <h3>My Old Portfolio</h3>
+                        <p>Previous version of my portfolio website</p>
+                    </div>
+                </a>
+                <a href="https://github.com/kyraisadev/roblox" target="_blank" class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Cdefs%3E%3ClinearGradient id='g4' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f43f5e;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%23f59e0b;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g4)' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' font-weight='bold' fill='white'%3ERoblox Scripts%3C/text%3E%3C/svg%3E" alt="Roblox Scripts">
+                    </div>
+                    <div class="project-content">
+                        <h3>Roblox Scripts</h3>
+                        <p>Collection of Roblox scripts and utilities</p>
+                    </div>
+                </a>
+                <a href="https://github.com/kyraisadev/beangd.github.io" target="_blank" class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Cdefs%3E%3ClinearGradient id='g5' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%2306b6d4;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g5)' width='400' height='200'/%3E%3Ctext x='50%25' y='45%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' font-weight='bold' fill='white'%3EFriend's%3C/text%3E%3Ctext x='50%25' y='65%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' font-weight='bold' fill='white'%3EPortfolio%3C/text%3E%3C/svg%3E" alt="My Friend's Portfolio">
+                    </div>
+                    <div class="project-content">
+                        <h3>My Friend's Portfolio</h3>
+                        <p>Portfolio website created for a friend</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="languages" id="languages">
+        <div class="container">
+            <h2 class="section-title">Languages I Use</h2>
+            <div class="languages-list">
+                <div class="language-item fade-in" style="--delay: 0s">
+                    <div class="language-info">
+                        <span class="language-name">Lua</span>
+                        <span class="language-percentage">0%</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" data-language="lua"></div>
+                    </div>
+                </div>
+                <div class="language-item fade-in" style="--delay: 0.1s">
+                    <div class="language-info">
+                        <span class="language-name">Luau</span>
+                        <span class="language-percentage">0%</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" data-language="luau"></div>
+                    </div>
+                </div>
+                <div class="language-item fade-in" style="--delay: 0.2s">
+                    <div class="language-info">
+                        <span class="language-name">Python</span>
+                        <span class="language-percentage">0%</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" data-language="python"></div>
+                    </div>
+                </div>
+                <div class="language-item fade-in" style="--delay: 0.3s">
+                    <div class="language-info">
+                        <span class="language-name">JavaScript</span>
+                        <span class="language-percentage">0%</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" data-language="javascript"></div>
+                    </div>
+                </div>
+                <div class="language-item fade-in" style="--delay: 0.4s">
+                    <div class="language-info">
+                        <span class="language-name">CSS</span>
+                        <span class="language-percentage">0%</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" data-language="css"></div>
+                    </div>
+                </div>
+                <div class="language-item fade-in" style="--delay: 0.5s">
+                    <div class="language-info">
+                        <span class="language-name">HTML</span>
+                        <span class="language-percentage">0%</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" data-language="html"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="fade-in">Made by Geetank</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
